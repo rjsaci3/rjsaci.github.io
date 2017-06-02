@@ -1,11 +1,14 @@
 <html>
 <head>
-<style>
-  #player{margin-top: 1000px;}
-</style>
+    <title>YouTube repeate video</title>
+    <style>
+        #player {
+            margin-top: 1000px;
+        }
+    </style>
 </head>
 <body>
-<form id="play">
+    <form id="play">
         <p>URL : <input type="text" id="url" value="https://www.youtube.com/watch?v=blziOlDCyo8" /></p>
         <p>Start time : <input type="text" id="start" value="4:44" /></p>
         <p>End time : <input type="text" id="end" value="5:32" /></p>
@@ -16,6 +19,7 @@
 
     <div id="player"></div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
         var player;
         var id;
@@ -72,5 +76,6 @@
             player.seekTo(start);
         }
     </script>
-    </body>
-    </html>
+</body>
+
+</html>
